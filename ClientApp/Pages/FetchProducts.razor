@@ -1,0 +1,62 @@
+@page "/fetchproducts"
+@using System.Text.Json
+@using System.ComponentModel
+
+<h3>Product List</h3>
+
+@if (errorMessage != null)
+{
+    <p style="color:red">@errorMessage</p>
+}
+else if (products == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <ul>
+        @foreach (var product in products)
+        {
+            <li>@product.Name - $@product.Price - (@product.category?.Name | @product.Stock in stock)</li>
+        }
+    </ul>
+}
+
+@code {
+    private Product[]? products;
+    private string? errorMessage;
+
+    [Inject]
+    public HttpClient Http { get; set; } = default!;
+
+    @inject ProductService ProductService
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            using var cts = new CancellationTokenSource(TimeSpan.FromSeconds(10)); // Timeout after 10 seconds
+            products = await ProductService.GetProductsAsync(cts.Token);
+
+            if (products == null || products.Length == 0)
+            {
+                errorMessage = "No products found.";
+            }
+        }
+        catch (OperationCanceledException)
+        {
+            errorMessage = "The request timed out. Please try again later.";
+        }
+        catch (JsonException jsonEx)
+        {
+            errorMessage = $"Data format error: {jsonEx.Message}";
+        }
+        catch (HttpRequestException httpEx)
+        {
+            errorMessage = $"Request error: {httpEx.Message}";
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Unexpected error: {ex.Message}";
+        }
+    }
+}

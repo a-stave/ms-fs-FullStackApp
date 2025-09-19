@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     "net9.0": {
+      "Blazored.SessionStorage/2.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "7.0.1"
+        },
+        "compile": {
+          "lib/net7.0/Blazored.SessionStorage.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0/Blazored.SessionStorage.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Authorization/9.0.6": {
         "type": "package",
         "dependencies": {
@@ -435,6 +447,18 @@
       }
     },
     "net9.0/browser-wasm": {
+      "Blazored.SessionStorage/2.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "7.0.1"
+        },
+        "compile": {
+          "lib/net7.0/Blazored.SessionStorage.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0/Blazored.SessionStorage.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Authorization/9.0.6": {
         "type": "package",
         "dependencies": {
@@ -869,6 +893,20 @@
     }
   },
   "libraries": {
+    "Blazored.SessionStorage/2.4.0": {
+      "sha512": "e3XXH+zGGxDq1zC7YzLDD8mfvtoC6ESwTWOGD25H+FbPJlB7yQeL72hDY76tqkcrh98fh+y12r4BNhyQVV9YKw==",
+      "type": "package",
+      "path": "blazored.sessionstorage/2.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "blazored.sessionstorage.2.4.0.nupkg.sha512",
+        "blazored.sessionstorage.nuspec",
+        "icon.png",
+        "lib/net6.0/Blazored.SessionStorage.dll",
+        "lib/net7.0/Blazored.SessionStorage.dll"
+      ]
+    },
     "Microsoft.AspNetCore.Authorization/9.0.6": {
       "sha512": "FG/fHZAg2J9NKt+y2BH+fMjc+TqA7wlri/3PNtoSgvclMlr5iPshDLXHQgvS9l7IUzzfkqQ3/DWPYuA4OJu75A==",
       "type": "package",
@@ -1750,6 +1788,7 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "Blazored.SessionStorage >= 2.4.0",
       "Microsoft.AspNetCore.Components.WebAssembly >= 9.0.6",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 9.0.6",
       "Microsoft.NET.ILLink.Tasks >= 9.0.6",
@@ -1799,6 +1838,10 @@
       "net9.0": {
         "targetAlias": "net9.0",
         "dependencies": {
+          "Blazored.SessionStorage": {
+            "target": "Package",
+            "version": "[2.4.0, )"
+          },
           "Microsoft.AspNetCore.Components.WebAssembly": {
             "target": "Package",
             "version": "[9.0.6, )"

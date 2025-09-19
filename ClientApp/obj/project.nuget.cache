@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "WaAkCVngDFk=",
+  "dgSpecHash": "7lz7z7VDeTs=",
   "success": true,
   "projectFilePath": "C:\\Users\\Aaron\\Documents\\Programs\\Full-Stack Dev\\Projects\\ms-fs-FullStackApp\\ClientApp\\ClientApp.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Aaron\\.nuget\\packages\\blazored.sessionstorage\\2.4.0\\blazored.sessionstorage.2.4.0.nupkg.sha512",
     "C:\\Users\\Aaron\\.nuget\\packages\\microsoft.aspnetcore.authorization\\9.0.6\\microsoft.aspnetcore.authorization.9.0.6.nupkg.sha512",
     "C:\\Users\\Aaron\\.nuget\\packages\\microsoft.aspnetcore.components\\9.0.6\\microsoft.aspnetcore.components.9.0.6.nupkg.sha512",
     "C:\\Users\\Aaron\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\9.0.6\\microsoft.aspnetcore.components.analyzers.9.0.6.nupkg.sha512",

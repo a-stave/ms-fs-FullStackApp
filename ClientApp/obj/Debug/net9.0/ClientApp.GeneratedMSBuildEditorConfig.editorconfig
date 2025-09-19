@@ -28,16 +28,12 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aaron/Documents/Programs/Full-Stack Dev/Projects/ms-fs-FullStackApp/ClientApp/Pages/Counter.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+[C:/Users/Aaron/Documents/Programs/Full-Stack Dev/Projects/ms-fs-FullStackApp/ClientApp/Pages/FetchProducts.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hQcm9kdWN0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Aaron/Documents/Programs/Full-Stack Dev/Projects/ms-fs-FullStackApp/ClientApp/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Aaron/Documents/Programs/Full-Stack Dev/Projects/ms-fs-FullStackApp/ClientApp/Pages/Weather.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2VhdGhlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Aaron/Documents/Programs/Full-Stack Dev/Projects/ms-fs-FullStackApp/ClientApp/_Imports.razor]
