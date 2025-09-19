@@ -1,0 +1,7 @@
+PROJECT REFLECTION
+
+Copilot helped a lot in the debugging process. While getting the initial code set up was trivial, CORS was a bit of a curveball--especially when Copilot suggested only allowing the one client localhost's address, which became a bit of a game of whack-a-mole trying to track down which url to whitelist. Turns out 'AllowAnyOrigin' is a fantastic policy in development! But it was instructive, and I'm actually really curious whether CORS can be configured as a sort of firewall against suspicious or malicious origins? That'll be something to look into!
+
+A more successful example was Copilot's helping me identify some basic stuff -- I'd implemented a client-side caching service to help improve performance, only to find it wasn't being called during page refreshes. Copilot helped me move to session storage since my original cache wouldn't survive a page refresh in WebAssembly; after a bit more frustration it pointed out my page was calling the backend rather than the service, bypassing it entirely. That was embarrassing...
+
+Copilot's also proven decent at pointing out ways to expand the project. For simplicity's sake I copied my models into both projects, but it suggested migrating both into a shared .NET library. The advantages are obvious (and as a neophyte it's good to learn what another of those .NET templates is for!) but that'll be something for future projects to test out.
